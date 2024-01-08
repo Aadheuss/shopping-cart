@@ -1,0 +1,11 @@
+.mediumFont {
+  font-size: clamp(1rem, calc(1rem + calc(0.25vw + 0.25vh)), 1.5rem);
+}
+
+.mediumBigFont {
+  font-size: clamp(1.25rem, calc(1.25rem + calc(0.25vw + 0.25vh)), 1.75rem);
+}
+
+.bigFont {
+  font-size: clamp(1.5rem, calc(1.5rem + calc(0.25vw + 0.25vh)), 2rem);
+}

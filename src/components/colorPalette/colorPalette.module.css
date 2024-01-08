@@ -1,0 +1,11 @@
+:root {
+  --main-color: #000000;
+}
+
+.borderColor {
+  border-color: var(--main-color);
+}
+
+.borderBtmColor {
+  border-bottom-color: var(--main-color);
+}

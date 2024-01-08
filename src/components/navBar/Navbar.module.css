@@ -1,0 +1,17 @@
+.navBar {
+  composes: borderBtmColor from "../colorPalette/colorPalette.module.css";
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.navBarPaddingX {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.navBarPaddingY {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}

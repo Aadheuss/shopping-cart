@@ -1,0 +1,37 @@
+.noneList {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  composes: navBarPaddingX from "../navBar/navBar.module.css";
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.clearBtn {
+  background-color: transparent;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  composes: icon from "../imgSize/imgSize.module.css"
+}
+
+.navBtn {
+  composes: clearBtn;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  min-width: 42px; 
+  padding: 0.5em;
+  margin: 0;
+}
