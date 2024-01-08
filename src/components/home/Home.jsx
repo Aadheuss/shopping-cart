@@ -1,6 +1,8 @@
+import styles from "./Home.module.css";
+
 const Home = () => {
   return (
-    <main>
+    <main className={styles.home}>
       <button>Shop now</button>
     </main>
   );
