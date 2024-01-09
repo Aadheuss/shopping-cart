@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1980px;
   margin: 0 auto;
+  min-height: 100dvh;
   text-align: center;
   display: grid;
   grid-template-rows: min-content 1fr;

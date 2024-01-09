@@ -1,0 +1,26 @@
+.shoppingCard {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  padding: 0.5em;
+}
+
+.imgContainer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgLandscape {
+  width: 60%;
+  height: auto;
+}
+
+.imgPortrait {
+  height: 80%;
+  width: auto;
+}
+
+.boldText {
+  font-weight: 700;
+}
