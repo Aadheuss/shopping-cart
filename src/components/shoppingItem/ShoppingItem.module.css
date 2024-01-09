@@ -1,0 +1,26 @@
+.shoppingItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingItemDesc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 72ch;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+}
+
+.bold {
+  font-weight: 700;
+}

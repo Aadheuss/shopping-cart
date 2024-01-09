@@ -18,6 +18,12 @@ const Router = () => {
         {
           path: "shop",
           element: <ShopPage />,
+          children: [
+            {
+              path: ":name",
+              element: <ShopPage />,
+            },
+          ],
         },
       ],
     },
