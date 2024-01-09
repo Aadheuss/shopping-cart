@@ -1,5 +1,6 @@
 import styles from "./ShoppingCard.module.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const ShoppingCard = ({ item }) => {
   const [dimensions, setDimensions] = useState({ height: 0, width: 0 });
@@ -32,6 +33,10 @@ const ShoppingCard = ({ item }) => {
       </div>
     </li>
   );
+};
+
+ShoppingCard.propTypes = {
+  item: PropTypes.object,
 };
 
 export default ShoppingCard;
