@@ -1,4 +1,4 @@
-import NavBar from "../../components/navBar/NavBar";
+import NavBar from "../../components/navbar/Navbar";
 import "../../App.css";
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
