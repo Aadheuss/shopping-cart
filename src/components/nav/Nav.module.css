@@ -7,7 +7,7 @@
 }
 
 .nav {
-  composes: navBarPaddingX from "../navBar/navBar.module.css";
+  composes: navBarPaddingX from "../navBar/NavBar.module.css";
   display: flex;
   align-items: center;
   justify-content: end;

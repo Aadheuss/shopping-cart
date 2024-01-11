@@ -1,7 +1,7 @@
 .h1 {
   composes: mediumBigFont from "../fontSize/fontSize.module.css";
-  composes: navBarPaddingX from "../navBar/navBar.module.css";
-  composes: navBarPaddingY from "../navBar/navBar.module.css";
+  composes: navBarPaddingX from "../navBar/NavBar.module.css";
+  composes: navBarPaddingY from "../navBar/NavBar.module.css";
   color: black;
   margin: 0;
 }
