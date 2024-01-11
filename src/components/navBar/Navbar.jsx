@@ -1,9 +1,9 @@
 import Nav from "../nav/Nav";
 import Header from "../header/Header";
-import styles from "./Navbar.module.css";
+import styles from "./NavBar.module.css";
 import PropTypes from "prop-types";
 
-const Navbar = ({ cart, cartOnView }) => {
+const NavBar = ({ cart, cartOnView }) => {
   return (
     <div className={styles.navBar}>
       <Header />
@@ -12,9 +12,9 @@ const Navbar = ({ cart, cartOnView }) => {
   );
 };
 
-Navbar.propTypes = {
+NavBar.propTypes = {
   cart: PropTypes.arrayOf(PropTypes.object),
   cartOnView: PropTypes.object,
 };
 
-export default Navbar;
+export default NavBar;

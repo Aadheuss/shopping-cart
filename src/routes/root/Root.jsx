@@ -1,4 +1,4 @@
-import Navbar from "../../components/navbar/Navbar";
+import NavBar from "../../components/navBar/NavBar";
 import "../../App.css";
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
@@ -80,7 +80,7 @@ const Root = () => {
 
   return (
     <>
-      <Navbar
+      <NavBar
         cart={cart}
         cartOnView={{
           value: cartOnView,
