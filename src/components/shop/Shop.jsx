@@ -3,10 +3,13 @@ import ShoppingList from "../shoppingList/ShoppingList";
 import styles from "./Shop.module.css";
 import { useParams } from "react-router-dom";
 import ShoppingItem from "../shoppingItem/ShoppingItem";
+import { useOutletContext } from "react-router-dom";
+import Loading from "../loading/Loading";
 
 const Shop = () => {
   const [data, setData] = useState(null);
   const { name } = useParams();
+  const [addItemToCart] = useOutletContext();
 
   useEffect(() => {
     async function fetchData() {
@@ -23,19 +26,19 @@ const Shop = () => {
   const findItem = () => data.find((item) => item.id === Number(name));
 
   return (
-    <main className={styles.shop}>
+    <div className={styles.shop}>
       {name === undefined ? (
         data !== null ? (
           <ShoppingList list={data} />
         ) : (
-          <div>Loading...</div>
+          <Loading />
         )
       ) : data !== null ? (
-        <ShoppingItem item={findItem()} />
+        <ShoppingItem item={findItem()} onSubmit={addItemToCart} />
       ) : (
-        <div>Loading...</div>
+        <Loading />
       )}
-    </main>
+    </div>
   );
 };
 

@@ -1,0 +1,40 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.img {
+  height: 80%;
+  width: auto;
+}
+
+.h3 {
+  text-align: start;
+  font-size: clamp(0.5rem, calc(0.5rem + calc(0.25vh + 0.25vw)), 1rem);
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.priceDesc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

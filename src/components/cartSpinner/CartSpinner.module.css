@@ -1,0 +1,19 @@
+.spinner {
+  display: flex;
+  align-items: center;
+}
+
+.spinnerChild {
+  padding: 0.5em;
+}
+
+.spinnerBtn {
+  composes: spinnerChild;
+  border-radius: 0;
+}
+
+.spinnerInput {
+  composes: spinnerChild;
+  width: 42px;
+  overflow-x: scroll;
+}

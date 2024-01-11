@@ -31,10 +31,19 @@
 
 .navBtn {
   composes: clearBtn;
+  position: relative;
   display: flex;
   align-items: center;
   height: 42px;
   min-width: 42px; 
   padding: 0.5em;
   margin: 0;
+}
+
+.cartQuantity {
+  position: absolute;
+  color: red;
+  font-weight: 700;
+  right: 3px;
+  top: -3px;
 }

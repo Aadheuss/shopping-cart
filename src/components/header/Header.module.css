@@ -2,5 +2,6 @@
   composes: mediumBigFont from "../fontSize/fontSize.module.css";
   composes: navBarPaddingX from "../navBar/navBar.module.css";
   composes: navBarPaddingY from "../navBar/navBar.module.css";
+  color: black;
   margin: 0;
 }

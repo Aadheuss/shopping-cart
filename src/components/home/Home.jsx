@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <main className={styles.home}>
+    <div className={styles.home}>
       <Link to="shop">
         <button>Shop now</button>
       </Link>
-    </main>
+    </div>
   );
 };
 
