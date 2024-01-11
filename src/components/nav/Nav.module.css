@@ -7,7 +7,7 @@
 }
 
 .nav {
-  padding: 1em;
+  composes: navBarPaddingX from "../navBar/NavBar.module.css";
   display: flex;
   align-items: center;
   justify-content: end;
@@ -26,8 +26,7 @@
 }
 
 .icon {
-  height: 36px;
-  width: 36px;
+  composes: icon from "../imgSize/ImgSize.module.css"
 }
 
 .navBtn {
