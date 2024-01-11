@@ -19,7 +19,7 @@ const ShoppingCart = ({ cart, cartOnView, spinnerFn, deleteItem }) => {
   const result = cart.length > 0 ? sumTotal() : 0;
 
   const getTwoDecimal = (num) => {
-    if ("num".split(".").length > 1) {
+    if (`${num}`.split(".").length > 1) {
       return Number.parseFloat(num).toFixed(2);
     }
 
